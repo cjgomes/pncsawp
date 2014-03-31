@@ -1,0 +1,31 @@
+adicionado o Slideshow na home e removida a condição para a sidebar, removido classe que imprimia o nome das categorias dos posts em cima do títulos e traduzido algumas partes do tema como botões de ir e voltar artigos, links para editar post e de exibição de informações.
+
+O que ainda falta?
+Esta faltando ainda criar um método para imprimir plugins na home. e organizar ainda toda a página inicial.
+debugar o espaço destinado a sidebar.
+
+20-10
+Construida a pagina de apresentacao com todas as linguagens e alternancia de texto usando scripts.
+mudança de tamanho do layout para full width
+O uso de script na presentation afetou o slideshow da página inicial
+diminuido o slideshow devido ao espaçamento e margen adicionados nos conteúdos.
+
+O que ainda falta?
+desbugar o slidershow para que use o script
+página de projetos com sidebar própria com atalhos para outros projetos.
+adicionar ícones das redes sociais na página inicial.
+
+24.10
+Slideshow da página inicial desbugado,
+Criação de templates de estilo para página de publicações e fasciculos
+criação de um widget para a página inicial que pode ser inserido através do dashboard.
+mudança no tamanho da fonte dos iten de menu para 2em
+criação de classes no style.css para o novo widget da página inicial.
+criação de sidebar contendo os links nas páginas de publicações, fascículos e livros.
+removido o sidebar que estava sendo chamado no footer
+adição de logo do site em svg.
+
+O que ainda falta?
+Adicionar ícones das redes sociais no rodapé
+desbugar o logo para mostrar o .svg completo e adicionar responsividade
+desbugar o menu com sublinks
