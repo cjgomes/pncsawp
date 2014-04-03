@@ -803,11 +803,9 @@ ul.flag-list li {
 .publications-nav li { 
 	background: #ebebeb; 
 }
-.publications-nav li:hover { 
+.publications-nav li:hover, 
+.publications-nav li.active { 
 	background: #f9f9f9;
-}
-.publications-nav li.current-menu-item {
-    background:#f9f9f9;
 }
 .publications-nav a {
     color: #565656;
