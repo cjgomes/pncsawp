@@ -878,7 +878,8 @@ ul.flag-list li {
 }
 #footer-col-middle li#fb:before {
     content: "";
-    background: url("images/fb-p.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -0px -150px;
     display:inline-block;
     padding: 1px 3px;
     vertical-align:middle;
@@ -886,12 +887,14 @@ ul.flag-list li {
     height:32px; 
 }
 #footer-col-middle li#fb:hover:before {
-    background: url("images/fb.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -46px -150px;
 }
 
 #footer-col-middle li#skype:before {
     content: "";
-    background: url("images/sky-p.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -0px -0px;
     display:inline-block;
     padding: 1px 3px;
     vertical-align:middle;
@@ -899,11 +902,13 @@ ul.flag-list li {
     height:32px; 
 }
 #footer-col-middle li#skype:hover:before {
-    background: url("images/sky.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -46px -0px;
 }
 #footer-col-middle li#mail:before {
     content: "";
-    background: url("images/mail-p.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -0px -36px;
     display:inline-block;
     padding: 1px 3px;
     vertical-align:middle;
@@ -911,11 +916,13 @@ ul.flag-list li {
     height:32px; 
 }
 #footer-col-middle li#mail:hover:before {
-    background: url("images/mail.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -46px -36px;
 }
 #footer-col-middle li#fone:before {
     content: "";
-    background: url("images/fone-p.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -0px -110px;
     display:inline-block;
     padding: 1px 3px;
     vertical-align:middle;
@@ -923,11 +930,13 @@ ul.flag-list li {
     height:32px; 
 }
 #footer-col-middle li#fone:hover:before {
-    background: url("images/fone.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -46px -110px;
 }
 #footer-col-middle li#home:before {
     content: "";
-    background: url("images/home-p.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -0px -74px;
     display:inline-block;
     padding: 1px 3px;
     vertical-align:middle;
@@ -935,7 +944,8 @@ ul.flag-list li {
     height:32px; 
 }
 #footer-col-middle li#home:hover:before {
-    background: url("images/home.png") no-repeat;
+    background: url("images/sprite-sociais.png") no-repeat;
+    background-position: -46px -74px;
 }
 .contact-list {
     margin-right: 0.5em;
