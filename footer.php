@@ -29,13 +29,12 @@
     
     <div class="footer-col left" id="footer-col-left">
         <h1>Notícias recentes</h1>
-                   <?php
-                    $args = array('numberposts' => '3');
-                    $recent_posts = wp_get_recent_posts($args);
-                    foreach ($recent_posts as $recent) {
-                        echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="Look ' . esc_attr($recent["post_title"]) . '" >' . $recent["post_title"] . '</a> </p> ';
-                    }
-                    ?>
+                   <?php query_posts('showposts=3'); ?>
+
+                    <?php while (have_posts()) : the_post(); ?>
+                    <p><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
+                    <?php endwhile;?>
+
     </div>
     
     <div class="footer-col left" id="footer-col-right">
