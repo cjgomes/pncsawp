@@ -887,7 +887,6 @@ ul.flag-list li {
     display: block;
     height: 31px;
     vertical-align: middle;
-    text-decoration: none !important;
 }
 .contact-list li.skype a {
     background-position: -0px -0px;
