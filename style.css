@@ -876,7 +876,54 @@ ul.flag-list li {
     margin-left:0.5em;
     padding-bottom:1em;
 }
-#footer-col-middle li#fb:before {
+
+.contact-list li {
+   list-style-type: none;
+}
+.contact-list li a {
+    background-image: url("images/icones-sociais.png");
+    background-repeat: no-repeat;
+    padding: 1px 35px;
+    display: block;
+    height: 31px;
+    vertical-align: middle;
+    text-decoration: none !important;
+}
+.contact-list li.skype a {
+    background-position: -0px -0px;
+}
+.contact-list li.skype a:hover {
+    background-position: -0px -160px;
+}
+.contact-list li.mail a {
+    background-position: -0px -32px;   
+}
+.contact-list li.mail a:hover {
+    background-position: -0px -192px;
+}
+.contact-list li.fb a {
+    background-position: -0px -64px;
+}
+.contact-list li.fb a:hover {
+    background-position: -0px -224px;
+}
+.contact-list li.fone a {
+    background-position: -0px -96px;
+}
+.contact-list li.fone a:hover {
+    background-position:  -0px -256px;
+}
+.contact-list li.home a {
+    background-position: -0px -128px;
+}
+.contact-list li.home a:hover {
+    background-position: -0px -288px;
+}
+/*-----------------------------------------
+compressão de css acima
+----------------------------------------*/
+
+/* #footer-col-middle li#fb:before {
     content: "";
     background: url("images/sprite-sociais.png") no-repeat;
     background-position: -0px -150px;
@@ -946,7 +993,8 @@ ul.flag-list li {
 #footer-col-middle li#home:hover:before {
     background: url("images/sprite-sociais.png") no-repeat;
     background-position: -46px -74px;
-}
+} */
+
 .contact-list {
     margin-right: 0.5em;
 }

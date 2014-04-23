@@ -19,11 +19,11 @@
     <div class="footer-col left" id="footer-col-middle">
         <h1>Contate-nos</h1>
         <div class="contact-list">
-        <li id="skype"><a href="skype:novacartografia?call" title="Ligar usando Skype" >novacartografia</a></li>
-        <li id="mail"><a href="http://novacartografiasocial.com/contate-nos/" title="Formulário de e-mail">pncsa.ufam@yahoo.com</a>
-        <li id="fb"><a href="http://facebook.com/PNCSA" title="Página do PNCSA no Facebook">facebook.com/PNCSA</a></li>
-        <li id="fone">(92) 3232 - 8423 / 3878 - 4412</li>
-        <li id="home" title="Endereço">Av. Leonardo Malcher, 1728, 6&ordm andar &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Centro.</li>
+            <li class="skype"><a href="skype:novacartografia?call" title="Ligar usando Skype" >novacartografia</a></li>
+            <li class="mail"><a href="http://novacartografiasocial.com/contate-nos/" title="Formulário de e-mail">pncsa.ufam@yahoo.com</a>
+            <li class="fb"><a href="http://facebook.com/PNCSA" title="Página do PNCSA no Facebook" target="_blank">facebook.com/PNCSA</a></li>
+            <li class="fone"><a href="http://novacartografiasocial.com/contate-nos/">(92) 3232 - 8423 / 3878 - 4412</a></li>
+            <li class="home" title="Endereço"><a href="https://goo.gl/maps/SHD5w" target="_blank" title="Como chegar?">Av. Leonardo Malcher, 1728, 6&ordm andar - Centro.</a></li>
         </div>
     </div>
     
