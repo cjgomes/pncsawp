@@ -3,7 +3,7 @@
 <?php if ( have_posts() ) : ?>
 
     <div class="list-switch">
-        Search Result <span>/</span> <?php the_search_query(); ?>
+        <span>Resultado da Pesquisa / </span><strong><?php the_search_query(); ?></strong>
         <a href="javascript: void(0);" id="mode"<?php if ($_COOKIE['mode'] == 'grid') echo ' class="flip"'; ?>></a>
     </div>
 
@@ -12,16 +12,16 @@
 <?php else : ?>
 
     <div class="content-title">
-        Your search <strong><?php the_search_query(); ?></strong> did not match any documents
+        Não encontramos nenhum resultado com a sua pesquisa <strong><?php the_search_query(); ?></strong>
     </div>
 
     <div class="entry">
         <div class="single clear">
             <div class="post-content">
-                <div class="search">
+                <div class="searchagain">
                     <form method="get" id="searchform" action="<?php bloginfo('url'); ?>">
                         <fieldset>
-                            <input name="s" type="text" onfocus="if(this.value=='Search with some different keywords') this.value='';" onblur="if(this.value=='') this.value='Search with some different keywords';" value="Search with some different keywords" />
+                            <input name="s" type="text" placeholder="Buscar novamente usando outros termos" />
                             <button type="submit"></button>
                         </fieldset>
                     </form>
