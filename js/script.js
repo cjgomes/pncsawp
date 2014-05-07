@@ -2,7 +2,7 @@ jQuery.noConflict();
 (function($) {
     $(function() {
         /*** Dropdown menu ***/
-        
+
         var timeout    = 200;
         var closetimer = 0;
         var ddmenuitem = 0;
