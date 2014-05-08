@@ -139,7 +139,7 @@ body {
 	margin: 0 auto;
 }
 #container {
-	margin:0.5em; 
+	margin:0.5em;
 	height: auto;
 }
 
@@ -157,18 +157,18 @@ body {
 }
 #show-toggle{
 
-	
+
 	background: #000 url("images/toggle-menu.png");
 	background-repeat: no-repeat;
 	background-position: -2% 50%;
-	display:none;	
+	display:none;
 	margin-top: 0;
 	margin-bottom: 5px;
     height: 4em;
     width: 100%;
     cursor: pointer;
     color: #FFF;
-    
+
     }
 
     #show-toggle span {
@@ -182,13 +182,13 @@ body {
 
 
  /* Media Queries */
- 
+
  @media handheld, screen and (max-width: 858px) {
 	body {
 		padding: 0 0 24px 0;
 	}
 
-     
+
     .wrapper {
 		width:99%;
 		overflow: hidden;
@@ -198,7 +198,7 @@ body {
 		height: auto !important;
 		overflow: auto;
 	}
-	  
+
    	#navigation-menu {
    		display: none}
 
@@ -208,7 +208,7 @@ body {
    .main-menu{
    		display: block;
    		width: 858px;
-   		
+
    	}
    	.main-menu ul li a{
    		text-align: center;
@@ -246,7 +246,7 @@ body {
 .nav li {
 display:block !important;
 }
-   		
+
 
 	.content-publications {
 		width:100% !important;
@@ -254,11 +254,11 @@ display:block !important;
 		float: none !important;
 	}
 	.sidebar-publications {
-		width: 26%; 
+		width: 26%;
 		float: none !important;
 		padding-bottom: 1em;
-		padding-top: 1em; 
-		display:inline-block !important; 
+		padding-top: 1em;
+		display:inline-block !important;
 	}
 	.list .post .thumb img {
 		float: none !important;
@@ -299,7 +299,7 @@ display:block !important;
     padding-right:auto !important;
     top:0 !important;
     left:0 !important;
-    
+
 }
 
 }
@@ -361,13 +361,13 @@ display:block !important;
 	width: 145px;
     margin-top:0.05em;
     margin-right:0.7em;
-	
+
 }
 .searchagain {
 	width: 600px;
     margin-top:0.05em;
     margin-right:0.7em;
-	
+
 }
 .search fieldset {
 	width: 130px;
@@ -380,12 +380,12 @@ display:block !important;
     border: 1px solid #CCC;
 }
 .search input, .searchagain input {
-	
-	border: none; 
-	background: none; 
-	padding: 5px; 
-	color: #555; 
-	font-size: 90%;  
+
+	border: none;
+	background: none;
+	padding: 5px;
+	color: #555;
+	font-size: 90%;
 	vertical-align: middle;
 }
 .search input {
@@ -405,6 +405,7 @@ display:block !important;
 }
 .search button {
     background-color: #ebebeb;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
     box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
 }
 .searchagain button {
@@ -455,7 +456,6 @@ display:inline-block;
 .nav > li:hover > a {
   background: #982d27; /* Mint */
   -webkit-transition: background 0.4s ease-out;
-  -moz-transition: background 0.4s ease-out;
   transition: background 0.4s ease-out;
 }
 
@@ -503,28 +503,20 @@ cursor:pointer;
 /*** Slideshow ***/
 
 .slideshow {
-	height: 300px; 
-	width: 100%; 
+	width: 100%;
 	overflow:hidden;
 	position: relative;
-	margin-bottom: 15px;   
+	margin-bottom: 15px;
 }
-.slide {
-	
-	width: 100%;  
-}
-.slide img {
-	display: block; 
-	float: left; 
-	width: 550px; 
-	height: 300px; 
-	position: relative; 
-	top: -20px; 
-	margin-right:0.5em;
-}
-.slide .post {
-    padding: 5px 10px 0;
-}
+.slide {height: 290px; width: 927px; background: #ebebeb;}
+.slide img {display: block; float: left; height: 290px; position: relative; top: -20px; left: -30px;}
+.slide .post {padding: 20px 20px 0 0;}
+.slide .post a {color: #565656;}
+.slide .post h2 {margin-bottom: 0.5em;}
+.slide .post h2, .slide .post h2 a {line-height:1.5; color: #565656; font-size:119%; font-weight: normal; text-decoration: none;}
+.slide .post h2 a:hover {text-decoration: none; color:#777;}
+.slide .post-content, .slide.post-content p {margin-bottom: 15px; color: #333; line-height:1.5;}
+.slide .post-date {font-size:80%; margin-bottom:0.8em;color:#333;}
 
 #larr, #rarr {display: block; width: 32px; height: 53px; position: absolute; top: 135px !important; opacity: 0.2; z-index: 99 !important;}
 #larr {background: #982d27 url("images/larr.png") 8px 50% no-repeat; left: 0 !important;}
@@ -729,7 +721,7 @@ p#cancel-comment-reply {float: right; line-height: 28px; margin: 0;}
 .presentation-area p {margin: 0.5em 1em 0.5em 1em;}
 
 hr {
-	border-width: 0; 
+	border-width: 0;
 	height: 1px;
 	border-top-width: 1px;
     }
@@ -756,7 +748,7 @@ ul.flag-list li {
 }
 
 .flag-content-header {
-    
+
     margin: 2em 3em;
 }
 
@@ -771,12 +763,12 @@ ul.flag-list li {
     float: left;
 }
 .flag-content-header h1 {
-    
-    color: #565656; font-size: 1.3em; font-weight: normal; font-style: normal; 
+
+    color: #565656; font-size: 1.3em; font-weight: normal; font-style: normal;
 }
 
 .flag-content-text p {
-    
+
     color: #565656; font-size: 1em; text-align: justify; line-height: 1.5;
 
 }
@@ -784,30 +776,30 @@ ul.flag-list li {
 /** Publications list **/
 
 .content-publications {
-    width:75%; 
+    width:75%;
     float:right;
 }
 
 .sidebar-publications {
-    width: 20%; 
-    margin: 0.5em 1em; 
-    float:left; 
+    width: 20%;
+    margin: 0.5em 1em;
+    float:left;
 }
 
 .publications-nav {
 	font-weight: 600;
 	width: 200px;
-	 
+
 }
 .publications-nav ul, li {
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 .publications-nav ul li.hover,
-.publications-nav ul li:hover { 
-	position: relative; 
-	z-index: 10; 
+.publications-nav ul li:hover {
+	position: relative;
+	z-index: 10;
 }
 .publications-nav ul ul{
 	visibility: hidden;
@@ -816,22 +808,22 @@ ul.flag-list li {
 	left: 0;
 	z-index: 9;
 }
-.publications-nav ul li:hover > ul { 
-	visibility: visible; 
+.publications-nav ul li:hover > ul {
+	visibility: visible;
 }
-.publications-nav ul ul { 
-	top: 0; left: 100%; 
+.publications-nav ul ul {
+	top: 0; left: 100%;
 }
-.publications-nav span, 
+.publications-nav span,
 .publications-nav a {
 	display: inline-block;
 	font-size: 95%;
-	text-decoration: none; 
+	text-decoration: none;
 }
-.publications-nav li { 
-	background: #ebebeb; 
+.publications-nav li {
+	background: #ebebeb;
 }
-.publications-nav li:hover { 
+.publications-nav li:hover {
 	background: #f9f9f9;
 }
 .publications-nav li.current-menu-item {
@@ -840,14 +832,14 @@ ul.flag-list li {
 .publications-nav a {
     color: #565656;
     padding: 16px 8px 16px 15px;
-    width: 160px; 
+    width: 160px;
 }
 .publications-nav ul ul li {
 	background: #ebebeb;
     border:1px solid #dcdcdc;
 }
-.publications-nav ul ul li:hover { 
-	background: #f9f9f9; 
+.publications-nav ul ul li:hover {
+	background: #f9f9f9;
 }
 
 /* Icon padding */
@@ -858,12 +850,12 @@ ul.flag-list li {
 /*** Footer ***/
 
 .footer {
-	min-height: 60px;  
+	min-height: 60px;
 	padding: 1em 2em 1em;
 	background-color:#982d27;
 	overflow: auto;
     font-family: "Open sans", Arial, "Times new roman";
-	
+
 }
 .footer p {
 	line-height: 1.5;
@@ -876,8 +868,8 @@ ul.flag-list li {
     color: #FFF;
 }
 .footer a {
-	color: #fff; 
-	text-decoration: none; 
+	color: #fff;
+	text-decoration: none;
 	font-weight: 600;
 }
 .footer a:hover {
@@ -893,7 +885,7 @@ ul.flag-list li {
     width:33.3%;
     display:block;
     text-align:left;
-    font-size: 85%; 
+    font-size: 85%;
 	color: #f3f3f3;
 }
 .footer-col h1 {
@@ -923,7 +915,7 @@ ul.flag-list li {
     background-position: -0px -160px;
 }
 .contact-list li.mail a {
-    background-position: -0px -32px;   
+    background-position: -0px -32px;
 }
 .contact-list li.mail a:hover {
     background-position: -0px -192px;
@@ -958,7 +950,7 @@ compressão de css acima
     padding: 1px 3px;
     vertical-align:middle;
     width:32px;
-    height:32px; 
+    height:32px;
 }
 #footer-col-middle li#fb:hover:before {
     background: url("images/sprite-sociais.png") no-repeat;
@@ -973,7 +965,7 @@ compressão de css acima
     padding: 1px 3px;
     vertical-align:middle;
     width:32px;
-    height:32px; 
+    height:32px;
 }
 #footer-col-middle li#skype:hover:before {
     background: url("images/sprite-sociais.png") no-repeat;
@@ -987,7 +979,7 @@ compressão de css acima
     padding: 1px 3px;
     vertical-align:middle;
     width:32px;
-    height:32px; 
+    height:32px;
 }
 #footer-col-middle li#mail:hover:before {
     background: url("images/sprite-sociais.png") no-repeat;
@@ -1001,7 +993,7 @@ compressão de css acima
     padding: 1px 3px;
     vertical-align:middle;
     width:32px;
-    height:32px; 
+    height:32px;
 }
 #footer-col-middle li#fone:hover:before {
     background: url("images/sprite-sociais.png") no-repeat;
@@ -1015,7 +1007,7 @@ compressão de css acima
     padding: 1px 3px;
     vertical-align:middle;
     width:32px;
-    height:32px; 
+    height:32px;
 }
 #footer-col-middle li#home:hover:before {
     background: url("images/sprite-sociais.png") no-repeat;

@@ -19,8 +19,8 @@
             <div class="meta">
                         <span class="article-date"><?php the_time(__('j M, Y')) ?> &bull; <span><?php the_time() ?></span>
             </div>
-            <div class="article"><?php if (function_exists('smart_excerpt')) smart_excerpt(get_the_excerpt(), 55); ?></div>
-           
+            <div class="article"><?php if (function_exists('smart_excerpt')) smart_excerpt(get_the_excerpt(), 80); ?></div>
+
         </div>
 
         <?php endwhile; ?>

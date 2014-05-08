@@ -8,7 +8,7 @@
 
     if ( !empty($slides) ) : $exl_posts = Array(); ?>
 
-        <div class="slideshow background"><div id="slideshow">
+        <div class="slideshow"><div id="slideshow">
 
         <?php foreach( $slides as $post ) :
             setup_postdata($post);
@@ -16,17 +16,17 @@
             $exl_posts[] = $post->ID;
         ?>
         <div class="slide clear">
-            <div class="article-content">
+            <div class="post">
                 <?php if ( has_post_thumbnail() ) echo '<a href="'.get_permalink().'">'.get_the_post_thumbnail($post->ID, 'slide',
                     array(
                         'alt'	=> trim(strip_tags( $post->post_title )),
                         'title'	=> trim(strip_tags( $post->post_title )),
                     )).'</a>'; ?>
-                <!-- <div class="post-category"><?php the_category(' / '); ?></div> -->
-                <h3><a class="post" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                <span class="article-date"><?php the_time(__('j M, Y')) ?></span>
-                <div class="post article"><?php if ( has_post_thumbnail() && function_exists('smart_excerpt') ) smart_excerpt(get_the_excerpt(), 50); else smart_excerpt(get_the_excerpt(), 150); ?></div>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+                <div class="post-date"><?php the_time(__('j M, Y')) ?></div>
+                <div class="post-content"><?php if ( has_post_thumbnail() && function_exists('smart_excerpt') ) smart_excerpt(get_the_excerpt(), 30); else smart_excerpt(get_the_excerpt(), 150); ?></div>
             </div>
         </div>
         <?php endforeach; ?>

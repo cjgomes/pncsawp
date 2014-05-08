@@ -9,7 +9,7 @@ function pncsa_setup() {
 	update_option('thumbnail_size_w', 290);
     update_option('thumbnail_size_h', 290);
     add_image_size( 'mini-thumbnail', 50, 50, true );
-    add_image_size( 'slide', 640, 290, true );
+    add_image_size( 'slide', 550, 300, true );
     register_nav_menu('Navigation', __('Navigation'));
     register_nav_menu('Publications-menu', __('Publications-menu'));
     register_nav_menu('Fasciculos-menu', __('Fasciculos-menu'));
@@ -89,13 +89,13 @@ class extended_walker extends Walker_Nav_Menu{
  * PNCSA Scripts
  */
 function pncsa_scripts() {
-    
-    
+
+
      wp_enqueue_script('jquery');
 			wp_enqueue_script('cycle', get_template_directory_uri() . '/js/jquery.cycle.all.min.js', 'jquery', false);
 			wp_enqueue_script('cookie', get_template_directory_uri() . '/js/jquery.cookie.js', 'jquery', false);
-            
-            wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', 'jquery', false);   
+
+            wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', 'jquery', false);
 }
 
 add_action('wp_enqueue_scripts', 'pncsa_scripts');
@@ -245,6 +245,27 @@ function options_page() {
         </form>
     </div>
 <?php
+}
+
+//improve excerpt
+
+function improved_trim_excerpt($text) {
+				global $post;
+				if ( '' == $text ) {
+								$text = get_the_content('');
+								$text = apply_filters('the_content', $text);
+								$text = str_replace('\]\]\>', ']]&gt;', $text);
+								$text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
+								$text = strip_tags($text, '<p>');
+								$excerpt_length = 50;
+								$words = explode(' ', $text, $excerpt_length + 1);
+								if (count($words)> $excerpt_length) {
+												array_pop($words);
+												array_push($words, '[...]');
+												$text = implode(' ', $words);
+								}
+				}
+				return $text;
 }
 
 // Update options
