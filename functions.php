@@ -89,13 +89,13 @@ class extended_walker extends Walker_Nav_Menu{
  * PNCSA Scripts
  */
 function pncsa_scripts() {
-
-
+    
+    
      wp_enqueue_script('jquery');
 			wp_enqueue_script('cycle', get_template_directory_uri() . '/js/jquery.cycle.all.min.js', 'jquery', false);
 			wp_enqueue_script('cookie', get_template_directory_uri() . '/js/jquery.cookie.js', 'jquery', false);
-
-            wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', 'jquery', false);
+            
+            wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', 'jquery', false);   
 }
 
 add_action('wp_enqueue_scripts', 'pncsa_scripts');
@@ -257,7 +257,7 @@ function improved_trim_excerpt($text) {
                 $text = str_replace('\]\]\>', ']]&gt;', $text);
                 $text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
                 $text = strip_tags($text, '<p>');
-                $excerpt_length = 50;
+                $excerpt_length = 70;
                 $words = explode(' ', $text, $excerpt_length + 1);
                 if (count($words)> $excerpt_length) {
                         array_pop($words);
