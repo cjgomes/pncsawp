@@ -1032,11 +1032,6 @@ Social sharing buttons
     font-weight:bold;
     text-align:center;
     text-decoration:none;
-    border-radius:5px;
-    -moz-border-radius:5px;
-    -o-border-radius:5px;
-    -webkit-border-radius:5px;
-    -ms-border-radius:5px;
 }
 /*Twitter*/
 .twitter{
@@ -1058,19 +1053,18 @@ Social sharing buttons
 /*---------------------------------------
 CSS table
 ----------------------------------------*/
-
-table,
-th,
-td {
+.projetos table,
+.Projetos th,
+.projetos td {
 	border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-th, td:focus {
+.projetos th, .projetos td:focus {
     background: pink;
     margin: 0 auto;
 }
 
-table {
+.projetos table {
 	border-collapse: separate;
 	border-spacing: 0;
 	border-width: 1px 0 0 1px;
@@ -1078,20 +1072,20 @@ table {
 	width: 100%;
 }
 
-caption,
-th,
-td {
+.projetos caption,
+.projetos th,
+.projetos td {
 	font-weight: normal;
 	text-align: left;
     padding:6px 14px;
 }
 
-th {
+.projetos th {
 	border-width: 0 1px 1px 0;
 	font-weight: bold;
 }
 
-td {
+.projetos td {
 	border-width: 0 1px 1px 0;
 }
 
@@ -1102,4 +1096,7 @@ Planilha de Projetos Page
     width: 2500px;
     margin:0 auto;
     background: #FFF;
+}
+th {
+border-bottom: 1px solid rgba(0,0,0,0.2);
 }
