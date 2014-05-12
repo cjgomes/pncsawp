@@ -7,17 +7,17 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favico.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
-        
+
         <!--[if IE]><link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/ie.css" /><![endif]-->
        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" media="screen"/>
        <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" media="screen">-->
 
 
         <?php wp_head(); ?>
-        
+
 	</head>
 	<body <?php echo (get_option('bg_color')) ? 'style="background-color: '.get_option('bg_color').';"' : '' ?>>
-        <div id="show-toggle"><span>Menu</span></div>
+
         <div class="wrapper">
 
 
@@ -32,7 +32,7 @@
 			<a href="<?php bloginfo('home'); ?>"><img src="<?php echo (get_option('logo-gif_url')) ? get_option('logo-gif_url') : get_bloginfo('template_url') . '/images/mapa.gif' ?>" alt="<?php bloginfo('name'); ?>"/></a>
 		</div>
 
-                
+
 
             </div>
 
@@ -45,18 +45,13 @@
             'container'         => 'div',
             'container_class'   => 'main-nav',
             'menu_class'        => 'nav',
-            
+
             'walker'            => new extended_walker())); ?>
 
            </div>        <!-- Container -->
 
 
-                     <script>
-            jQuery("#show-toggle").click (function() {
-                jQuery("#navigation-menu").toggle("fast");
-
-            });
-        </script>
+                     
 
  <script>
         // with jQuery
