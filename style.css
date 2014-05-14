@@ -796,81 +796,6 @@ ul.flag-list li {
 .contact-list li.home a:hover {
     background-position: -0px -288px;
 }
-/*-----------------------------------------
-compressão de css acima
-----------------------------------------*/
-
-/* #footer-col-middle li#fb:before {
-    content: "";
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -0px -150px;
-    display:inline-block;
-    padding: 1px 3px;
-    vertical-align:middle;
-    width:32px;
-    height:32px;
-}
-#footer-col-middle li#fb:hover:before {
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -46px -150px;
-}
-
-#footer-col-middle li#skype:before {
-    content: "";
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -0px -0px;
-    display:inline-block;
-    padding: 1px 3px;
-    vertical-align:middle;
-    width:32px;
-    height:32px;
-}
-#footer-col-middle li#skype:hover:before {
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -46px -0px;
-}
-#footer-col-middle li#mail:before {
-    content: "";
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -0px -36px;
-    display:inline-block;
-    padding: 1px 3px;
-    vertical-align:middle;
-    width:32px;
-    height:32px;
-}
-#footer-col-middle li#mail:hover:before {
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -46px -36px;
-}
-#footer-col-middle li#fone:before {
-    content: "";
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -0px -110px;
-    display:inline-block;
-    padding: 1px 3px;
-    vertical-align:middle;
-    width:32px;
-    height:32px;
-}
-#footer-col-middle li#fone:hover:before {
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -46px -110px;
-}
-#footer-col-middle li#home:before {
-    content: "";
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -0px -74px;
-    display:inline-block;
-    padding: 1px 3px;
-    vertical-align:middle;
-    width:32px;
-    height:32px;
-}
-#footer-col-middle li#home:hover:before {
-    background: url("images/sprite-sociais.png") no-repeat;
-    background-position: -46px -74px;
-} */
 
 .contact-list {
     margin-right: 0.5em;
@@ -891,17 +816,42 @@ Social sharing buttons
     text-align:center;
     text-decoration:none;
 }
-/*Twitter*/
 .twitter{
     background:#9AE4E8;
 }
-/*Facebook*/
 .facebook{
     background:#3B5998;
 }
-/*Google Plus*/
 .google-plus{
-    background:#D34836;
+		background:#D34836;
+}
+.facebook:hover, .google-plus:hover, .twitter:hover {
+	-webkit-box-shadow: inset 0 -3px 0 rgba(0,0,0,.27);
+box-shadow: inset 0 -3px 0 rgba(0,0,0,.27);
+}
+
+.facebook:active, .google-plus:active, .twitter:active {
+	-webkit-box-shadow: inset 0 3px 0 rgba(0,0,0,.27);
+box-shadow: inset 0 3px 0 rgba(0,0,0,.27);
+}
+.facebook:hover {
+	background-color: #295aaf;
+}
+.facebook:active {
+	background-color: #37558b;
+}
+.google-plus:hover {
+background-color: #ce352c;
+}
+.google-plus:active{
+
+background-color: #b23424;
+}
+.twitter:hover {
+	background-color: #7fecec;
+}
+.twitter:active {
+	background-color: #93d6d6;
 }
 
 .banners {
