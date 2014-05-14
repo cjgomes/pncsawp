@@ -1,6 +1,6 @@
 <?php
 /**
-    *Template Name: Página de Livros
+    *Template Name: Página de Boletins
 **/
 get_header();
 ?>
@@ -28,8 +28,8 @@ get_header();
 
 
  <?php wp_nav_menu(array(
-            'menu'              => 'Livros-menu',
-            'theme_location'    => 'Livros-menu',
+            'menu'              => 'Boletins-menu',
+            'theme_location'    => 'Boletins-menu',
             'depth'             => 2,
             'container'         => 'div',
             'container_class'   => 'publications-nav',

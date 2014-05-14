@@ -24,15 +24,17 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
 
 /*** Navigation ***/
 
-if ( !is_nav_menu('Navigation') || !is_nav_menu('Publications-menu') || !is_nav_menu('Fasciculos-menu') || !is_nav_menu('Livros-menu')) {
+if ( !is_nav_menu('Navigation') || !is_nav_menu('Publications-menu') || !is_nav_menu('Fasciculos-menu') || !is_nav_menu('Livros-menu') || !is_nav_menu('Boletins-menu')) {
     $menu_id1 = wp_create_nav_menu('Navigation');
     $menu_id2 = wp_create_nav_menu('Publications-menu');
     $menu_id3 = wp_create_nav_menu('Fasciculos-menu');
     $menu_id4 = wp_create_nav_menu('Livros-menu');
+		$menu_id4 = wp_create_nav_menu('Boletins-menu');
     wp_update_nav_menu_item($menu_id1, 1);
     wp_update_nav_menu_item($menu_id2, 1);
     wp_update_nav_menu_item($menu_id3, 1);
     wp_update_nav_menu_item($menu_id4, 1);
+		wp_update_nav_menu_item($menu_id5, 1);
 }
 
 class extended_walker extends Walker_Nav_Menu{
