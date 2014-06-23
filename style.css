@@ -908,3 +908,14 @@ Planilha de Projetos Page
 th {
 border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+#revolvermap embed {
+    margin: 0 auto;
+    width:100%;
+}
+#wpcredits {
+    font-size: 90%;
+    color: #FFF;
+    margin: 0 auto;
+    width:100%;
+    display: block;
+}

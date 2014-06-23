@@ -38,12 +38,14 @@
     </div>
     
     <div class="footer-col left" id="footer-col-right">
-        <h1>Sobre</h1>
-        <p>O Projeto Nova Cartografia Social da Amazônia tem como objetivo dar ensejo à auto-cartografia dos povos e comunidades tradicionais na Amazônia.</p><br />
-        <p>&copy; 2014 <a href="<?php bloginfo('home'); ?>"><?php bloginfo('name'); ?></a>. Todos os Direitos Reservados.<br />
-        Desenvolvido em <a href="http://wordpress.org">WordPress</a>.</p>
+        <h1>Visitantes pelo mundo</h1>
+        <div id="revolvermap">
+        <script type="text/javascript" src="http://jh.revolvermaps.com/2/1.js?i=7nqtsi7vo75&amp;s=182&amp;m=2&amp;v=true&amp;r=false&amp;b=982d27&amp;n=false&amp;c=ff0000" async="async"></script>
+            </div>
     </div>
-    
+    <div id="wpcredits">
+        <p>&copy; 2014 <a href="<?php bloginfo('home'); ?>"><?php bloginfo('name'); ?></a>. Todos os Direitos Reservados.</p>
+    </div>
         </div>
         <!-- Page generated: <?php timer_stop(1); ?> s, <?php echo get_num_queries(); ?> queries -->
         <?php wp_footer(); ?>
