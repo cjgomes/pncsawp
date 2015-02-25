@@ -119,6 +119,9 @@ body {
 	background: #ebebeb url("images/line.png") 50% 0 no-repeat;
 	padding: 24px 0;
 }
+.clearfix {
+    clear:both;
+}
 .clear:after {
 	content: ".";
 	display: block;
@@ -915,7 +918,6 @@ border-bottom: 1px solid rgba(0,0,0,0.2);
 #wpcredits {
     font-size: 90%;
     color: #FFF;
-    margin: 0 auto;
-    width:100%;
-    display: block;
+    text-align: center;
+    margin-top: 1em;   
 }

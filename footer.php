@@ -43,6 +43,7 @@
         <script type="text/javascript" src="http://jh.revolvermaps.com/2/1.js?i=7nqtsi7vo75&amp;s=182&amp;m=2&amp;v=true&amp;r=false&amp;b=982d27&amp;n=false&amp;c=ff0000" async="async"></script>
             </div>
     </div>
+    <div class="clearfix"></div>
     <div id="wpcredits">
         <p>&copy; 2014 <a href="<?php bloginfo('home'); ?>"><?php bloginfo('name'); ?></a>. Todos os Direitos Reservados.</p>
     </div>
